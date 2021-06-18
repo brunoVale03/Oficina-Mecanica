@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box; 
+    margin: 0;
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+}
+
+/* logo */
+
+.Nav_inicial{
+    background: #000000;
+    box-shadow: 0px 8px 24px;
+    height: 93px;  
+}
+
+.nav_itens{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    position: absolute;
+    left: 20px;
+    right: -500px;
+    top: 35px;
+    bottom: 14px;
+}
+
+.nav_itens li{
+    list-style: none;
+    margin-right: 50px; 
+}
+
+.nav_itens a {
+    color: #FFFCFC;
+    font-size: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    text-decoration: none;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    right: -11px;
+    top: 25px;
+    bottom: 14px;
+}
+
+.logo li{
+    list-style: none;
+    margin-right: 100px;
+}
+
+.logo a {
+    color: #F2C94C;
+    font-family: "IBM Plex Sans", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.meio_home{
+    background: #4f4f4f;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    align-items: center;
+    position: relative;
+    height: 700px;
+} 
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.titulo li{
+    list-style: none;
+    margin-right: 100px; 
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 44px;
+    letter-spacing: -0.56px;
+    color: #FFFCFC;
+    padding-bottom: 100px;
+ 
+}
+
+.corpo_home{
+    justify-content: space-between;
+    list-style-position: inside;
+}
+
+.corpo_home li{
+    display: flex;
+    list-style: none;
+    margin-right: 100px; 
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 44px;
+    align-items: center;
+    letter-spacing: -0.56px;
+    color: #FFFCFC;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    padding-bottom: 150px;
+}
+
+.btn_novo_agendamento{
+    background: #F2994A;
+    border-radius: 10px;
+    padding: 15px;
+    Width: 250px;
+    Height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn_novo_agendamento a{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration:none;
+    align-items: center;
+    color: #000000;
+}
+
+.rodape_contato{
+    background: #4f4f4f;
+}
+
+.rodape_contato li{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 24px;
+    color: #CDC9D6;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

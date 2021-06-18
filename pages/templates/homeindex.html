@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
+</head>
+<body>
+    <div class="tela_home">
+        <div class="Nav_inicial">
+            <ul class="logo">
+                <li><a class="nav-link" href="{% url 'home' %}">Oficina Abelha</a></li> 
+            </ul>
+
+            <ul class="nav_itens">
+                <li><a class="nav-link" href="{% url 'account_login' %}">Login</a></li>
+                <li><a class="nav-link" href="{% url 'comofunc' %}">Como Funciona</a></li>
+                <li><a class="nav-link" href="{% url 'contato' %}">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="meio_home">
+            <IMG class="displayed" src="{% static 'images/foto.png' %}" alt="">
+                <ul class="corpo_home">
+                <li> Agende a revisão do seu carro na Oficina Abelha   
+            </ul>
+            <ul class="btn_novo_agendamento">
+                <a class="btn_novo_agendamento" href="{% url 'account_login' %}">Novo Agendamento</a> 
+            </ul> 
+        </div>
+
+        <div class="rodape_contato">
+                <ul class="contato"> 
+                    <ul>
+                        <li> R. Agenor Clauss, 65 - Jardim Monte Carlo, Indaiatuba
+                        <li> E-mail: oficinaabelha@gmail.com
+                        <li> Telefone:  (19) 2660-0789
+                    <ul>
+                </ul>
+        </div>
+    </div>
+</body>
+</html>

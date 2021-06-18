@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Cliente</title>
+    <link rel="stylesheet" href="{% static 'css/aclientestyle.css' %}">
+</head>
+<body>
+    <div class="tela_cadastro">
+        <div class="Nav_inicial">
+            <ul class="logo">
+                <li><a>Oficina Abelha</a></li> 
+            </ul>
+
+            <ul class="nav_itens">
+                <li><a class="nav-link" href="{% url 'agendamento' %}">Agendamento</a></li>
+                <li><a class="nav-link" href="{% url 'account_logout' %}">Sair</a></li>
+
+            </ul>
+        </div>
+
+        <div class="meio_areacliente">
+            
+            <ul class="titulo_texto">
+                <li> Área do Cliente
+            </ul>
+
+            <ul class="Clientes_texto">
+                <li> Informações do cliente
+            </ul>
+
+            <ul class="areacliente_informacao">
+                <input type = "text" name="agendamentoNome" value="{{user.email}}" readonly/>
+            </ul>
+
+            <ul class="Status_texto">
+                <li> Status do Agendamento
+<BR>
+                {% for agendamento in lista_agendamento %}
+
+                   ({{agendamento.id}}) - {{agendamento.agendamentoData}} - {{agendamento.agendamentoHora}} - {{agendamento.agendamentoMarcado}}<BR>
+               
+                {% endfor %}
+            </ul> 
+
+
+            <ul class="Agendamento_texto">
+                <li> Precisa de um novo agendamento?
+            </ul>
+
+            <ul class="btn_novoagendamento">
+                <a class="btn_novoagendamento" href="{% url 'agendamento' %}">Novo Agendamento</a> 
+            </ul>
+
+        </div>
+
+        <div class="rodape_contato">
+                <ul class="contato"> 
+                    <ul>
+                        <li> R.  Agenor Clauss, 65 - Jardim Monte Carlo, Indaiatuba
+                        <li> E-mail: oficinaabelha@gmail.com
+                        <li> Telefone:  (19) 2660-0789
+                    <ul>
+                </ul>
+        </div>
+    </div>
+
+</body>
+</html>

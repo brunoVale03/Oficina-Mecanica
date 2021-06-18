@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Funciona</title>
+    <link rel="stylesheet" href="{% static 'css/comofunstyle.css' %}">
+</head>
+<body>
+    <div class="tela_cadastro">
+        <div class="Nav_inicial">
+            <ul class="logo">
+                <li><a class="nav-link" href="{% url 'home' %}">Oficina Abelha</a></li> 
+            </ul>
+
+            <ul class="nav_itens">
+                <li><a class="nav-link" href="{% url 'account_login' %}">Login</a></li>
+                <li><a class="nav-link" href="{% url 'comofunc' %}">Como Funciona</a></li>
+                <li><a class="nav-link" href="{% url 'contato' %}">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="meio_como_funciona">
+
+            <ul class="titulo_Agende">
+                <li> Agende a revisão do seu carro na Oficina Abelha
+            </ul>
+
+            <ul class="titulo_texto">
+                <li> É necassário apenas fazer um cadastro na nossa página e logo em seguida,
+                    selecionar um dia no nosso calendário
+            </ul>
+
+            <ul class="funcionario_calendario">
+                <input type="date"/>
+            </ul>
+
+            <ul class="titulo_Horario">
+                <li> Selecionar um horário
+            </ul>
+
+            <ul class="funcionario_horário">
+                <input type="time" placeholder="Digite o seu email" />
+            </ul>
+
+            <ul class="titulo_Selecionar">
+                <li> E clicar no botão Solicitar.
+            </ul>
+
+            <ul class="btn_solicitar">
+                <a class="btn_solicitar" href="#">Solicitar</a> 
+            </ul>
+
+            <ul class="titulo_textoII">
+                <li> Sua solicitação será enviada e em alguns dias 
+                    você conseguirá ver se seu agendamento foi
+                    realizado com sucesso na área do cliente
+            </ul>
+
+            <ul class="titulo_Agendar">
+                <li> Vamos agendar?
+            </ul>
+
+            <ul class="btn_novoagendamento">
+                <a class="btn_novoagendamento" class="nav-link" href="{% url 'account_login' %}">Novo Agendamento</a> 
+            </ul>
+
+        </div>
+
+        <div class="rodape_contato">
+                <ul class="contato"> 
+                    <ul>
+                        <li> R.  Agenor Clauss, 65 - Jardim Monte Carlo, Indaiatuba
+                        <li> E-mail: oficinaabelha@gmail.com
+                        <li> Telefone:  (19) 2660-0789
+                    <ul>
+                </ul>
+        </div>
+    </div>
+
+    <script src="comofun.py"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'css/loginstyle.css' %}">
+</head>
+<body>
+    <div class="tela_recuperacao">
+        <div class="Nav_inicial">
+            <div class="Nav_inicial">
+                <ul class="logo">
+                    <li><a class="nav-link" href="{% url 'home' %}">Oficina Abelha</a></li> 
+                </ul>
+    
+                <ul class="nav_itens">
+                    <li><a class="nav-link" href="{% url 'comofunc' %}">Como Funciona</a></li>
+                    <li><a class="nav-link" href="{% url 'contato' %}">Contato</a></li>
+                </ul>
+        </div>
+        <form class="login" method="POST" action="{% url 'account_login' %}">
+            {% csrf_token %}
+            <div class="meio_login">
+ 
+            <ul class ="titulo">
+                <li> Login de Cliente ou Funcionário
+            </ul>
+
+            <ul class="login_email">
+                {{form.login}}
+            </ul>
+
+            <ul class ="esqueceu">
+                <li><a class="nav-link" href="{% url 'account_reset_password' %}">Esqueceu a sua senha?</a></li>
+            </ul>
+
+            <ul class="login_senha">
+                {{form.password}}
+                
+            </ul>
+
+            <ul class ="cadastro">
+                <li><a class="nav-link" href="{% url 'account_signup' %}">Não tem cadastro? Cadastre-se</a></li>
+                <BR><BR>                
+            </ul>
+            <ul class="">      
+                {% load socialaccount %}
+                <style>
+                    .exe{
+                    align-items: center;
+                    background:    #f2994a;
+                    border-radius: 18px;
+                    padding:       20px 60px;
+                    color:         #000000;
+                    display:       inline-block;
+                    font:          normal bold 20px/1 "Open Sans", sans-serif;
+                    text-align:    center;}
+                </style>
+                <CENTER><button class="exe" type="submit" value="Login">Logar</button></CENTER>
+                <BR><BR>
+                    <style>
+                        .exe1{
+                        align-items: center;
+                        background:    #4a4df2;
+                        border-radius: 18px;
+                        padding:       20px 60px;
+                        color:         #ffffff;
+                        display:       inline-block;
+                        font:          normal bold 20px/1 "Open Sans", sans-serif;
+                        text-align:    center;}
+                    </style>
+                <center><a class="exe1" href="{% provider_login_url 'facebook' %}">Logar com o Facebook</a></center>
+            </ul>
+        </div>
+    </form>
+ 
+        <div class="rodape_contato">
+                <ul class="contato"> 
+                    <ul>
+                        <li> R.  Agenor Clauss, 65 - Jardim Monte Carlo, Indaiatuba
+                        <li> E-mail: oficinaabelha@gmail.com
+                        <li> Telefone:  (19) 2660-0789
+                    <ul>
+                </ul>
+        </div>
+    </div>
+</body>
+</html>

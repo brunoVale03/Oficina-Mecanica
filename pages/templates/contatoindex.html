@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="{% static 'css/contatostyle.css' %}">
+</head>
+<body>
+
+    <div class="tela_contato">
+        <div class="Nav_inicial">
+            <ul class="logo">
+                <li><a class="nav-link" href="{% url 'home' %}">Oficina Abelha</a></li> 
+            </ul>
+
+            <ul class="nav_itens">
+                <li><a class="nav-link" href="{% url 'login' %}">Login</a></li>
+                <li><a class="nav-link" href="{% url 'comofunc' %}">Como Funciona</a></li>
+                <li><a class="nav-link" href="{% url 'contato' %}">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="meio_contato">
+            <IMG class="displayed" src="{% static 'images/foto.png' %}" alt="">
+                <ul class="corpo_contato">
+                <ul class="name">
+                    <li>Contato Oficina Abelha: 
+                </ul>
+    
+                <ul class="name_itens">
+                    <li> R.  Agenor Clauss, 65 - Jardim Monte Carlo, Indaiatuba
+                    <li> E-mail: oficinaabelha@gmail.com
+                    <li> Telefone:  (19) 2660-0789
+                </ul>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="contato.py"></script>    
+</body>
+</html>

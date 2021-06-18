@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box; 
+    margin: 0;
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+}
+
+/* logo */
+
+.Nav_inicial{
+    background: #000000;
+    box-shadow: 0px 8px 24px;
+    height: 93px; 
+
+}
+
+.nav_itens{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    position: absolute;
+    left: 20px;
+    right: -500px;
+    top: 35px;
+    bottom: 14px;
+}
+
+.nav_itens li{
+    list-style: none;
+    margin-right: 50px; 
+}
+
+.nav_itens a {
+    color: #FFFCFC;
+    font-size: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    text-decoration: none;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    right: -11px;
+    top: 25px;
+    bottom: 14px;
+}
+
+.logo li{
+    list-style: none;
+    margin-right: 100px;
+}
+
+.logo a {
+    color: #F2C94C;
+    font-family: "IBM Plex Sans", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.meio_agendamento{
+    background: #4f4f4f;
+    align-items: center;
+    position: relative;
+    display: center;
+}
+
+.titulo_Agende{
+    padding-top: 80px;
+    padding-bottom:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo_Agende li{
+    list-style: none;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 44px;
+    letter-spacing: -0.56px;
+    color: #FFFCFC;
+}
+
+.calendario_texto{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendario_texto li{
+    list-style: outside;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 44px;
+    letter-spacing: -0.56px;
+    color: #FFFCFC;
+    padding-right:330px;
+}
+
+.agen_calendario{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agen_calendario input{
+    background: #FFFCFC;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    border-radius: 8px 8px 8px 8px;
+    font-size: 24px;
+    line-height: 25px;
+    border: 10;
+    padding: 40px 230px;
+    color: #000000;
+}
+
+.agen_horariotext{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agen_horariotext li{
+    list-style: outside;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 44px;
+    letter-spacing: -0.56px;
+    color: #FFFCFC;
+    padding-right:430px;
+}
+
+.agen_horario{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agen_horario input{
+    background: #FFFCFC;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    border-radius: 8px 8px 8px 8px;
+    font-size: 24px;
+    line-height: 25px;
+    border: 10;
+    padding: 40px 280px;
+    color: #000000;
+}
+
+.agen_descricaotext{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agen_descricaotext li{
+    list-style: outside;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 44px;
+    letter-spacing: -0.56px;
+    color: #FFFCFC;
+    padding-right:430px;
+}
+
+.agen_descricao{
+    padding-bottom: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agen_descricao input{
+    background: #FFFCFC;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    border-radius: 8px 8px 8px 8px;
+    font-size: 24px;
+    line-height: 25px;
+    border: 10;
+    padding: 40px 190px;
+    color: #000000;
+}
+
+.btn_solicitar{
+    Width: 400px;
+    Height: 56px;
+    background: #F2994A;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-right: 40px;
+}
+
+.btn_solicitar a {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration:none;
+    color: #000000;
+    padding-left: 40px;
+}
+
+.rodape_contato{
+    background: #4f4f4f;
+    height: 200px;
+    letter-spacing: 0.44px;
+    padding-top: 80px;
+}
+
+.rodape_contato li{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #CDC9D6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 80px;
+}
+
+
+.placa_texto{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placa_texto li{
+    list-style: outside;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 44px;
+    letter-spacing: -0.56px;
+    color: #FFFCFC;
+    padding-right:350px;
+}
+
+.cadastro_placa{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro_placa input{
+    background: #FFFCFC;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    border-radius: 8px 8px 8px 8px;
+    font-size: 24px;
+    line-height: 25px;
+    border: 10;
+    padding: 40px 190px;
+    color: #000000;
+}
+
+.modelo_texto{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modelo_texto li{
+    list-style: outside;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 44px;
+    letter-spacing: -0.56px;
+    color: #FFFCFC;
+    padding-right:350px;
+}
+
+.cadastro_modelo{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro_modelo input{
+    background: #FFFCFC;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    border-radius: 8px 8px 8px 8px;
+    font-size: 24px;
+    line-height: 25px;
+    border: 10;
+    padding: 40px 190px;
+    color: #000000;
+}
+
+.ano_texto{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ano_texto li{
+    list-style: outside;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 44px;
+    letter-spacing: -0.56px;
+    color: #FFFCFC;
+    padding-right:350px;
+}
+
+.cadastro_ano{
+    padding-bottom:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro_ano input{
+    background: #FFFCFC;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    border-radius: 8px 8px 8px 8px;
+    font-size: 24px;
+    line-height: 25px;
+    border: 10;
+    padding: 40px 190px;
+    color: #000000;
+}
