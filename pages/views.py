@@ -32,7 +32,7 @@ def homecliente(request):
 
 def agendamento(request):
     if request.method == 'POST':
-        agendament = Agendamento(agendamentoData=request.POST,agendamentoHora=request.POST,agendamentoDescricao=request.POST,agendamentoNome=request.POST,agendamentoMarcado="Aguardando confirmação")
+        agendament = Agendamento(agendamentoData=request.POST,agendamentoHora=request.POST,agendamentoDescricao=request.POST,agendamentoNome=request.POST,agendamentoMarcado=0)
         if request.POST.get('agendamentoData') and request.POST.get('agendamentoHora') and request.POST.get('agendamentoDescricao') and request.POST.get('agendamentoNome'):
             agendament.agendamentoData= request.POST.get('agendamentoData')
             agendament.agendamentoHora= request.POST.get('agendamentoHora')
